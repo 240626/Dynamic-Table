@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="table-container">
+        <h2>Dynamic Student List</h2>
+        
+        <div class="input-form">
+            <input type="text" id="name-input" placeholder="Name">
+            <input type="number" id="age-input" placeholder="Age">
+            <button id="add-row-btn">Add Row</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="sortable" data-key="name">Name ↕</th>
+                    <th class="sortable" data-key="age">Age ↕</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
